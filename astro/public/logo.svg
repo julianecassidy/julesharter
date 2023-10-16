@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="13.5 4 500 200">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 106.667px;
+        fill: #203344;
+        font-family: Kristi;
+      }
+
+      .cls-1, .cls-2 {
+        text-anchor: middle;
+      }
+
+      .cls-2 {
+        font-size: 24px;
+        fill: #54697a;
+        font-family: Domine;
+      }
+    </style>
+  </defs>
+  <text id="Jules_Harter" data-name="Jules Harter" class="cls-1" x="216" y="107.5"><tspan x="216">Jules Harter</tspan></text>
+  <text id="purveyor_of_gothic_stories" data-name="purveyor of gothic stories" class="cls-2" x="346.278" y="167.405"><tspan x="346.278">purveyor of gothic stories</tspan></text>
+</svg>
