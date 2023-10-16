@@ -1,13 +1,13 @@
 export default {
-    title: `Astro Sanity Minimal Starter`,
-    description: `This is an example blog made with Astro.`,
-    url: `https://astro-sanity-minimal-starter.netlify.app`, // No trailing slash!
+    title: `Jules Harter`,
+    description: `purveyor of gothic stories`,
+    url: `https://julesharter.com`, // No trailing slash!
     // JSON LD
-    name: `Example`,
+    name: `JulesHarter`,
     // Facebook URL
-    facebookURL: `https://facebook.com`,
+    facebookURL: `https://www.facebook.com/julesharterwriter`,
     // Twitter URL
-    twitterURL: `https://twitter.com/jaydanurwin`,
+    twitterURL: `https://twitter.com`,
     // Instagram URL
-    instagramURL: `https://instagram.com/jaydanurwin`,
+    instagramURL: `https://instagram.com/julesharterwriter`,
 }
