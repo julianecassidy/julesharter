@@ -20,19 +20,106 @@
         text-decoration: underline;
     }
 
+    .footer-1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .footer-menu {
+        width: 50%;
+    }
+
+    .footer-menu p {
+        margin-bottom: 5px;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-social h3 {
+        width: 100%;
+    }
+
+    .footer-social img {
+        height: 30px;
+        margin: auto;
+        padding-top: 10px;
+        filter: invert(99%) sepia(0%) saturate(988%) hue-rotate(91deg) brightness(118%) contrast(100%);
+    }
+
+    .footer-insta {
+        border-radius: 50%;
+        background-color: hotpink;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        transition: .5s;
+    }
+
+    .footer-insta:hover {
+        background-color: rgb(226, 63, 145);
+    }
+
+    .footer-facebook {
+        border-radius: 50%;
+        background-color: #0866ff;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        transition: .5s;
+    }
+
+    .footer-facebook:hover {
+        background-color: #0049be;
+    }
+
+    .footer-tumblr {
+        border-radius: 50%;
+        background-color: #1b3759;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        transition: .5s;
+    }
+
+    .footer-tumblr:hover {
+        background-color: #011835;
+    }
+
+
+
 </style>
 
 <div class="footer">
     <div class="footer-1">
-        <div class="footer-section">
-            <a href="/about">about</a>
-            <a href="/">writing</a>
-            <a href="/">book reviews</a>
-            <a href="/blog">blog</a>
-            <a href="/contact">contact</a>
+        <div class="footer-menu">
+            <p><a href="/about">about</a></p>
+            <p><a href="/">writing</a></p>
+            <p><a href="/">book reviews</a></p>
+            <p><a href="/blog">blog</a></p>
+            <p><a href="/contact">contact</a></p>
         </div>
-        <div class="footer-section">
-            
+        <div class="footer-social">
+            <h3>find me on social media</h3>
+            <a href="https://instagram.com/julesharterwriter">
+                <div class="footer-insta">
+                    <img src="/assets/instagram.svg" />
+                </div>
+            </a>
+            <a href="https://www.facebook.com/julesharterwriter">
+                <div class="footer-facebook">
+                    <img src="/assets/facebook-f.svg" />
+                </div>
+            </a>
+            <a href="https://everydaygothic.tumblr.com/">
+                <div class="footer-tumblr">
+                    <img src="/assets/tumblr.svg" />
+                </div>
+            </a>    
         </div>
     </div>
     
