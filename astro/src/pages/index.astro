@@ -13,11 +13,13 @@ const seo = {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    column-gap: 80px;
+    row-gap: 30px;
   }
 
   .home-book {
     text-align: center;
+    width: 300px;
   }
 </style>
 
@@ -26,26 +28,26 @@ const seo = {
     <div class="home-books">
       <a href="/books/the-last-lighthouse-keeper">
         <div class="home-book">
-          <img src="" />
+          <img src="/assets/last-lighthouse-website-cover.jpg" />
           <h3>The Last Lighthouse Keeper</h3>
+        </div>
+      </a>
+      <a href="/blog/category/lighthouses">
+        <div class="home-book">
+          <img src="/assets/website-cover-teaser.jpg" />
+          <h3>The Lady Lightkeepers</h3>
         </div>
       </a>
       <a href="/books/everyday-gothic">
         <div class="home-book">
-          <img src="" />
+          <img src="/assets/everyday-gothic-cover-with-background.jpg" />
           <h3>Everyday Gothic</h3>
         </div>
       </a>
       <a href="/books/house-poetry">
         <div class="home-book">
-          <img src="" />
+          <img src="assets/house-poetry-cover-with-background.jpg" />
           <h3>House Poetry</h3>
-        </div>
-      </a>
-      <a href="/books/the-last-lighthouse-keeper">
-        <div class="home-book">
-          <img src="" />
-          <h3>The Last Lighthouse Keeper</h3>
         </div>
       </a>
     </div>

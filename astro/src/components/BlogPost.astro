@@ -13,21 +13,31 @@ const { post } = Astro.props;
 
 <Container>
   <article class="post-content__article">
-      {post.mainImage && <img width="720" height="420" class="post-main__img" loading="lazy" src={getSanityImageURL(post.mainImage).url()} />}
+    <div class="post-content__details">
       <h1>{post.title}</h1>
       <time>{formatBlogPostDate(post.publishedAt)}</time>
-      {post.author && <p>By {post.author.name}</p>}
-      <SanityPortableText portableText={post.body} />
+    </div>
+    {post.mainImage && <img class="post-main__img" loading="lazy" src={getSanityImageURL(post.mainImage).url()} />}
+      <!-- {post.author && <p>By {post.author.name}</p>} -->
+      <div class="post-content__body">
+        <SanityPortableText portableText={post.body} />
+      </div>
   </article>
 </Container>
 
 <style>
   .post-content__article {
+    display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
   }
 
+  .post-content__details {
+    width: 60%;
+  }
+
   .post-main__img {
-    width: 100%;
+    width: 30%;
     height: auto;
   }
 </style>
