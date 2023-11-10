@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Page.astro";
+import Container from "../../components/Container.astro";
+
+const seo = {
+    title: "House Poetry | Jules Harter",
+    description:
+        "Poems about the people who might live in the houses I take photos of.",
+};
+---
+
+<style>
+    .book-content {
+        display: flex;
+        gap: 50px;
+    }
+
+    .book-content img {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .book-button-cont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .book-button {
+        margin: 20px 0px;
+        background-color: #38597a;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        border-width: 0;
+        text-align: center;
+        transition: 0.8s;
+    }
+
+    .book-button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .book-button:hover {
+        background-color: #203344;
+        cursor: pointer;
+    }
+
+    .book-button a:hover {
+        color: white;
+    }
+</style>
+
+<Layout seo={seo}>
+    <Container>
+        <h1>house poetry</h1>
+
+        <div class="book-content">
+            <img src="/assets/house-poetry-cover-with-background.jpg" />
+            <div class="book-text">
+                <p>
+                    As the name suggests, House Poetry is a collection of short
+                    poems about houses. Or rather, the residents who might live
+                    in these houses. Each post contains a photograph of a house
+                    I’ve spotted on my journeys and a poem.
+                </p>
+            </div>
+        </div>
+    </Container>
+</Layout>

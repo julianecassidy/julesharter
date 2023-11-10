@@ -1,0 +1,110 @@
+---
+import Layout from "../../layouts/Page.astro";
+import Container from "../../components/Container.astro";
+
+const seo = {
+    title: "The Last Lighthouse Keeper | Jules Harter",
+    description:
+        "In this historical romance, Vanity has been long abandoned at the lighthous where she grew up, until a ship wrecks and a young man washes ashore.",
+};
+---
+
+<style>
+    .book-content {
+        display: flex;
+        gap: 50px;
+    }
+
+    .book-content img {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .book-button-cont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .book-button {
+        margin: 20px 0px;
+        background-color: #38597a;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        border-width: 0;
+        text-align: center;
+        transition: 0.8s;
+    }
+
+    .book-button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .book-button:hover {
+        background-color: #203344;
+        cursor: pointer;
+    }
+    
+    .book-button a:hover {
+        color: white;
+    }
+</style>
+
+<Layout seo={seo}>
+    <Container>
+        <h1>the last lighthouse keeper</h1>
+
+        <div class="book-content">
+            <img src="/assets/last-lighthouse-website-cover.jpg" />
+            <div class="book-text">
+                <p>Now available as an eBook.</p>
+                <p>
+                    <b>Almost everyone had forgotten about the old lighthouse
+                    and the young woman rumored to be stranded there. Almost
+                    everyone.</b
+                    >
+                </p>
+                <p>
+                    Vanity’s family went to shore to get provisions one day in
+                    1917, and they never came back. Now Vanity is stranded at
+                    the decommissioned lighthouse. Her radio messages to shore
+                    have gone unanswered and no one has come for her. But then a
+                    young man washes up on her beach. Now she must remember what
+                    it means not to be alone, especially when the company of the
+                    handsome Joshua makes it clear how much she has become a
+                    young woman in her time alone.
+                </p>
+                <p>
+                    But it is more than just company that Joshua brings. Vanity
+                    begins to suspect Joshua knows more about her missing family
+                    than he lets on, and his arrival may not have been a
+                    coincidence. Caught in the middle of an unexpected intrigue,
+                    Vanity suddenly finds her lonely existence threatened by
+                    blackmail, smuggling, and murder…all while trying to
+                    determine her own feelings for Joshua.
+                </p>
+                <p>
+                    Will Vanity and Joshua be able to help each other escape the
+                    loneliness of the forgotten lighthouse? And will they be
+                    able to get away from the island and the past Joshua has
+                    brought down upon them?
+                </p>
+                <p>
+                    <i>The Last Lighthouse Keeper</i> is the debut novel from Jules
+                    Harter. It promises a tale of romance, coming of age, and mystery
+                    against the shadow of an old lighthouse on a stormy sea. Escape
+                    to the lonely rock where nothing ever happens…until something
+                    does.
+                </p>
+                <div class="book-button-cont">
+                    <button class="book-button">
+                        <a href="https://www.amazon.com/dp/B0B25RD3BJ/ref=sr_1_2?crid=1V8DNPYPGRQR&keywords=the+last+lighthouse+keeper&qid=1653448151&sprefix=the+last+lighthouse+keepe%2Caps%2C115&sr=8-2">
+                            Purchase
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </Container>
+</Layout>

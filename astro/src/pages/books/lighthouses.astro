@@ -1,0 +1,89 @@
+---
+import Layout from "../../layouts/Page.astro";
+import Container from "../../components/Container.astro";
+
+const seo = {
+    title: "The Lady Lightkeeper's Project | Jules Harter",
+    description:
+        "Research on the women who kept lighthouses in the 1700s, 1800s, and 1900s.",
+};
+---
+
+<style>
+    .book-content {
+        display: flex;
+        gap: 50px;
+    }
+
+    .book-content img {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .book-button-cont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .book-button {
+        margin: 20px 0px;
+        background-color: #38597a;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        border-width: 0;
+        text-align: center;
+        transition: 0.8s;
+    }
+
+    .book-button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .book-button:hover {
+        background-color: #203344;
+        cursor: pointer;
+    }
+
+    .book-button a:hover {
+        color: white;
+    }
+</style>
+
+<Layout seo={seo}>
+    <Container>
+        <h1>Introducing the Lady Lighthouse Keepers Project</h1>
+
+        <div class="book-content">
+            <img src="/assets/website-cover-teaser.jpg" />
+            <div class="book-text">
+                <p>
+                    Welcome to the Lady Lighthouse Keepers project. Within this
+                    project, I am uniting my love of history, feminism, and
+                    lonely lighthouses on far off seas. As with many professions
+                    throughout history, the majority of lighthouse keepers were
+                    men. But what about the minority?
+                </p>
+                <p>
+                    Many women throughout the 1700s, 1800s, and 1900s operated
+                    lighthouses. Often, they took the role after their husband
+                    or father died and managed until another man could be hired,
+                    but other women became lighthouse keepers on their own,
+                    holding down what was an intensely demanding job, both
+                    mentally and physically.
+                </p>
+                <p>These are their stories.</p>
+                <p>
+                    <i>
+                        I am undertaking research into the individual women who
+                        kept watch at America’s lighthouses and the way of life
+                        they built. All of my research will be available here on
+                        the blog, and you can also follow me on Instagram,
+                        Twitter, or Facebook for updates.
+                    </i>
+                </p>
+            </div>
+        </div>
+    </Container>
+</Layout>

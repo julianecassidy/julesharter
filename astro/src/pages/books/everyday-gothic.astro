@@ -1,0 +1,80 @@
+---
+import Layout from "../../layouts/Page.astro";
+import Container from "../../components/Container.astro";
+
+const seo = {
+    title: "Everyday Gothic | Jules Harter",
+    description: "A writing project that looks at everything from the mundane to the unusual through the style of traditional gothic literature.",
+};
+---
+
+<style>
+    .book-content {
+        display: flex;
+        gap: 50px;
+    }
+
+    .book-content img {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .book-button-cont {
+        display: flex;
+        justify-content: center;
+    }
+
+    .book-button {
+        margin: 20px 0px;
+        background-color: #38597a;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        border-width: 0;
+        text-align: center;
+        transition: 0.8s;
+    }
+
+    .book-button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .book-button:hover {
+        background-color: #203344;
+        cursor: pointer;
+    }
+
+    .book-button a:hover {
+        color: white;
+    }
+</style>
+
+<Layout seo={seo}>
+    <Container>
+        <h1>everyday gothic</h1>
+
+        <div class="book-content">
+            <img src="/assets/everyday-gothic-cover-with-background.jpg" />
+            <div class="book-text">
+                <p>
+                    It’s there in your walk home, creeping into your everyday
+                    life. A gothic feeling. In the strangers who look at you
+                    like they know you. In the empty field outside of town and
+                    the Chinese restaurant down the street and the strange red
+                    light in the distance that never stops flashing. >
+                </p>
+                <p>A sense of something you cannot name.</p>
+                <br />
+                <p>
+                    Everyday Gothic plays on the traditions of gothic
+                    literature, examining daily life through a gothic lens.
+                    Sometimes satirical and sometimes serious, the resulting
+                    snapshots are available on <a
+                        href="https://everydaygothic.tumblr.com/">Tumblr</a
+                    > (almost) everyday.
+                </p>
+            </div>
+        </div>
+    </Container>
+</Layout>
