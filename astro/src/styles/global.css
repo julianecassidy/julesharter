@@ -60,3 +60,85 @@ a {
 a:hover {
   color: #203344;
 }
+
+/* nav styles */
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #38597a;
+}
+
+@media screen and (max-width: 636px) {
+  .hamburger {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 4px;
+  }
+}
+
+@media screen and (min-width: 636px) {
+  .hamburger {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  .hamburger .line {
+    width: 40px;
+    height: 5px;
+  }
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #38597a;
+  display: none;
+}
+
+.nav-links a {
+  display: block;
+  text-align: left;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 40px;
+}
+
+.nav-links a:hover, a:focus {
+  color: #203344;
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 790px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+    margin-right: 5px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

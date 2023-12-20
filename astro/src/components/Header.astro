@@ -1,5 +1,6 @@
 ---
 import logo from "../logo.svg";
+import NavBar from "./NavBar.astro"
 ---
 
 <style>
@@ -10,27 +11,18 @@ import logo from "../logo.svg";
         margin-bottom: 50px;
     }
 
-    .header img {
-        max-width: 400px;
-        margin-left: 30px;
+    @media screen and (max-width: 636px) {
+        .header img {
+            max-width: 250px;
+            margin-left: 30px;
+        } 
     }
 
-    .nav-bar {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        font-size: 20px;
-        margin-right: 30px;
-    }
-
-    .nav-bar a {
-        color: #54697a;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .nav-bar a:hover {
-        color: #203344;
+    @media screen and (min-width: 636px) {       
+        .header img {
+            max-width: 400px;
+            margin-left: 30px;
+        }
     }
 </style>
 
@@ -38,11 +30,7 @@ import logo from "../logo.svg";
     <a href="/">
         <img src={logo}></img>
     </a>
-    
-    <div class="nav-bar">
-        <a href="/about">about</a>
-        <a href="/">writing</a>
-        <a href="/blog">blog</a>
-        <a href="/contact">contact</a>
-    </div>
+
+    <NavBar />    
+
 </div>
