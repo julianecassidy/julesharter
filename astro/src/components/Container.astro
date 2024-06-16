@@ -6,16 +6,27 @@ export interface Props {
 const {narrow} = Astro.props;
 ---
 
-<div class={`content__container ${narrow && `content__container--narrow`}`}>
+<!-- <div class={`content__container ${narrow && `content__container--narrow`}`}> -->
+<div class=`content__container`>
   <slot></slot>
 </div>
 
 <style>
-.content__container {
-  max-width: var(--container-max-width);
-  margin: 0 200px;
-  padding: var(--container-padding);
-}
+  @media screen and (max-width: 400px) {
+    .content__container {
+      max-width: 350px;
+      padding: 0 20px;
+    }
+    
+  }
+
+  @media screen and (min-width: 400px) {
+    .content__container {
+      max-width: var(--container-max-width);
+      margin: 0 200px;
+      padding: var(--container-padding);
+    }
+  }
 .content__container--narrow {
   max-width: var(--container-max-width-narrow);
 }

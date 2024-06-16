@@ -21,5 +21,10 @@ const { seo } = Astro.props;
       <slot />
     </main>
     <slot name="footer" />
+    <script>
+      document.querySelector('.hamburger').addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.toggle('expanded');
+      });
+    </script>
   </body>
 </html>
